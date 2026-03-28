@@ -1,0 +1,76 @@
+.qualification {      
+  font-size: 20px;
+  background-color: #0f172a;
+  color: white;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 40px;
+  padding-left: 30px;
+  border-left: 3px solid #94a3b8; /* line color updated */
+}
+
+.entry {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  background-color: #94a3b8; /* dot color updated */
+  border-radius: 50%;
+  position: absolute;
+  left: -37px;
+  top: 6px;
+}
+
+.content h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.content p {
+  margin: 5px 0;
+  color: #cbd5e1;
+}
+
+.content span {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  background-color: #94a3b8;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* When circle is hovered, apply effect to next sibling (.content) */
+.circle:hover + .content h3,
+.circle:hover + .content p,
+.circle:hover + .content span {
+  color: #38bdf8;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}

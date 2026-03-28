@@ -1,0 +1,74 @@
+.sidebar {
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 90px;
+  background-color: #0f172a;
+  color: white;
+}
+
+.logo {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav a {
+  position: relative;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+  padding-left: 30px;
+  transition: color 0.3s ease;
+}
+
+/* Animated dash ✔*/
+.nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 3px; /* dash thickness */
+  background-color: #38bdf8;
+  transition: width 0.4s ease;
+}
+
+.nav a:hover::before {
+  width: 24px; /* expands on hover */
+}
+
+.nav a:hover {
+  color: white;
+}
+
+/* Socials at bottom */
+.socials {
+  display: flex;
+  gap: 20px;
+  margin-top: auto;
+  padding-top: 100px;
+}
+
+.socials a {
+  color: #94a3b8;
+  font-size: 26px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socials a:hover {
+  color: white;
+  transform: scale(1.2);
+}
