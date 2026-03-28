@@ -5,7 +5,7 @@ import countryImg from "../assets/countries.png";
 import weather from "../assets/weather-app.png";
 import travel from "../assets/travel.png";
 import emotional from "../assets/emotional.png";
-import AiTool from "../assets/ai-tool.png";
+import AiTool from "../assets/Ai-tool.png";
 import TODO from "../assets/too-do list.png";
 
 export default function Projects() {
