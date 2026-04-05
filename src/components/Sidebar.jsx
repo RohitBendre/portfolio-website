@@ -5,7 +5,7 @@ export default function Sidebar() {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.logo}>ROHIT BENDRE</div>
-      <p className={styles.name}>Front End Engineer</p>
+      <p className={styles.name}>Software Developer</p>
       <nav className={styles.nav}>
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
